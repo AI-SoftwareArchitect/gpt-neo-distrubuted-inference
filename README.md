@@ -17,7 +17,7 @@ Bu proje, **GPT-Neo 125M fine-tuned** modelini 8 kopya ile çalıştıran bir **
 
 ![ARCHITECTURE](docs/Arch.png)
 
-’’’bash 
+'''bash 
 version: "3.8"
 
 services:
@@ -131,5 +131,5 @@ services:
       - model_7
 
       - model_8
-’’’
+'''
 
