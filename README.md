@@ -2,7 +2,7 @@
 
 Bu proje, **GPT-Neo 125M fine-tuned** modelini 8 kopya ile çalıştıran bir **multi-container FastAPI servisi** ve **nginx load balancer** örneğidir. Ayrıca memory cache ve semantic similarity ile prompt caching sağlar.
 
-# birden fazla gpu için NVIDIA_VISIBLE_DEVICES=1 , NVIDIA_VISIBLE_DEVICES=2 şeklinde
+** birden fazla gpu için NVIDIA_VISIBLE_DEVICES=1 , NVIDIA_VISIBLE_DEVICES=2 şeklinde
 
 ---
 
