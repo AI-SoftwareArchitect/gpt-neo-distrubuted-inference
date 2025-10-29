@@ -15,4 +15,4 @@ Bu proje, **GPT-Neo 125M fine-tuned** modelini 8 kopya ile çalıştıran bir **
 - Docker Compose ile kolay deploy
 ---
 
-![ARCHITECTURE](docs/Architecture.png)
+![ARCHITECTURE](docs/Arch.png)
