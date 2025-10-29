@@ -16,3 +16,120 @@ Bu proje, **GPT-Neo 125M fine-tuned** modelini 8 kopya ile çalıştıran bir **
 ---
 
 ![ARCHITECTURE](docs/Arch.png)
+
+’’’bash 
+version: "3.8"
+
+services:
+
+  model_1:
+
+    build: ./model_service
+
+    runtime: nvidia
+
+    environment:
+
+      - NVIDIA_VISIBLE_DEVICES=0
+
+  model_2:
+
+    build: ./model_service
+
+    runtime: nvidia
+
+    environment:
+
+      - NVIDIA_VISIBLE_DEVICES=0
+
+  model_3:
+
+    build: ./model_service
+
+    runtime: nvidia
+
+    environment:
+
+      - NVIDIA_VISIBLE_DEVICES=0
+
+  model_4:
+
+    build: ./model_service
+
+    runtime: nvidia
+
+    environment:
+
+      - NVIDIA_VISIBLE_DEVICES=0
+
+  model_5:
+
+    build: ./model_service
+
+    runtime: nvidia
+
+    environment:
+
+      - NVIDIA_VISIBLE_DEVICES=0
+
+  model_6:
+
+    build: ./model_service
+
+    runtime: nvidia
+
+    environment:
+
+      - NVIDIA_VISIBLE_DEVICES=0
+
+  model_7:
+
+    build: ./model_service
+
+    runtime: nvidia
+
+    environment:
+
+      - NVIDIA_VISIBLE_DEVICES=0
+
+  model_8:
+
+    build: ./model_service
+
+    runtime: nvidia
+
+    environment:
+
+      - NVIDIA_VISIBLE_DEVICES=0
+
+  nginx:
+
+    image: nginx:latest
+
+    ports:
+
+      - "8080:80"
+
+    volumes:
+
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+
+    depends_on:
+
+      - model_1
+
+      - model_2
+
+      - model_3
+
+      - model_4
+
+      - model_5
+
+      - model_6
+
+      - model_7
+
+      - model_8
+’’’
+
